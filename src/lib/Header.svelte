@@ -4,12 +4,9 @@
 	let isOpen = false;
 </script>
 
-<header class="sticky top-0 z-50 w-full p-3">
+<header class="container sticky top-0 z-50 mx-auto w-full p-3">
 	<div class="flex h-14 items-center justify-between overflow-hidden rounded-xl border-2 border-slate-700/40 bg-black/25 px-5 backdrop-blur-xl">
-		<h1 class="relative text-xl font-bold">
-			<div class="absolute -left-12 -top-1 -z-10 h-16 w-64 bg-slate-800 blur-3xl" />
-			Ali Hashemi
-		</h1>
+		<h1 class="text-xl font-bold">Ali Hashemi</h1>
 
 		<div class="hidden gap-3 text-lg font-semibold md:flex">
 			<a href="/">Home</a>
