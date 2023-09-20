@@ -5,6 +5,7 @@
 
 <svelte:head>
 	<title>Ali Hashemi</title>
+	<meta name="description" content="Ali Hashemi's portfolio website." />
 </svelte:head>
 
 <Header />
