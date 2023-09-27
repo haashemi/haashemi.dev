@@ -7,9 +7,22 @@ export function load() {
 
 		projects: [
 			{
-				title: '',
-				image: '',
-				url: '',
+				title: 'Epic-Center',
+				duration: 'Aug 2022 - Present',
+				image: '/images/epic-center.png',
+				url: '/projects/epic-center',
+			},
+			{
+				title: 'Zainox',
+				duration: 'Dec 2022 (1 month)',
+				image: '/images/zainox.png',
+				url: '/projects/zainox',
+			},
+			{
+				title: 'LlamaNite',
+				duration: 'Jan 2021 - Aug 2022',
+				image: '/images/llamanite.png',
+				url: '/projects/llamanite',
 			},
 		],
 
@@ -28,6 +41,12 @@ export function load() {
 			{ name: 'Docker', style: 'hover:shadow-[0_0_30px_3px_#2496EDd9] hover:bg-[#2496ED]' },
 			{ name: 'OpenTelemetry', style: 'hover:shadow-[0_0_30px_3px_#000000d9] hover:bg-[#000000]' },
 			{ name: 'Nginx', style: 'hover:shadow-[0_0_30px_3px_#009639d9] hover:bg-[#009639]' },
+		],
+
+		socialMedia: [
+			{ name: 'E-Mail', username: 'contact@haashemi.dev', href: 'mailto:contact@haashemi.dev' },
+			{ name: 'Github', username: '@haashemi', href: 'https://github.com/haashemi' },
+			{ name: 'Telegram', username: '@Byfron', href: 'https://t.me/Byfron' },
 		],
 	};
 }
