@@ -17,8 +17,10 @@
 	<meta name="description" content="Ali Hashemi's portfolio website." />
 </svelte:head>
 
-<main class="container mx-auto flex flex-col gap-4 p-3">
-	<Header />
+<main class="min-h-screen w-full bg-black">
+	<div class="container mx-auto flex flex-col gap-4 p-3">
+		<Header />
 
-	<slot />
+		<slot />
+	</div>
 </main>
