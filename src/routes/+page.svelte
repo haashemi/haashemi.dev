@@ -11,7 +11,6 @@
 	<p class="pl-2 indent-4">{data.info.text}</p>
 
 	<div class="absolute -left-12 top-0 -z-10 h-20 w-64 bg-slate-800 blur-3xl" />
-	<div class="absolute bottom-0 right-0 -z-10 h-16 w-1/4 bg-slate-800 blur-3xl" />
 </div>
 
 <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
