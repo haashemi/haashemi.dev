@@ -23,9 +23,9 @@
 	>
 		<h1 class="select-none text-xl font-bold">Ali Hashemi</h1>
 
-		<div class="hidden gap-3 text-lg font-semibold md:flex">
+		<div class="hidden gap-7 text-lg font-semibold md:flex">
 			{#each routes as route}
-				<a href={route.href}>{route.title}</a>
+				<a class="transition-colors duration-200 hover:text-slate-400" href={route.href}>{route.title}</a>
 			{/each}
 		</div>
 
@@ -35,7 +35,11 @@
 					<Icon src={CgClose} size="28" color="white" />
 				</span>
 			{:else}
-				<span transition:fly={{ duration: 250, x: 20 }} class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+				<span
+					in:fly={{ duration: 250, x: -20 }}
+					out:fly={{ duration: 250, x: 20 }}
+					class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+				>
 					<Icon src={CgMenuRight} size="28" color="white" />
 				</span>
 			{/if}
