@@ -1,9 +1,9 @@
 <script lang="ts">
 	//@ts-ignore
 	import Icon from 'svelte-icons-pack/Icon.svelte';
-	import GitHub from 'svelte-icons-pack/si/SiGitHub.js';
-	import MailDotRu from 'svelte-icons-pack/si/SiMaildotru.js';
-	import Telegram from 'svelte-icons-pack/si/SiTelegram.js';
+	import GitHub from 'svelte-icons-pack/si/SiGithub';
+	import MailDotRu from 'svelte-icons-pack/si/SiMaildotru';
+	import Telegram from 'svelte-icons-pack/si/SiTelegram';
 </script>
 
 <h1 class="my-10 text-center text-4xl font-semibold">Get in touch!</h1>
