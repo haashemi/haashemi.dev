@@ -20,7 +20,7 @@ export function load() {
 			},
 			{
 				title: 'LlamaNite',
-				duration: 'Jan 2021 - Aug 2022',
+				duration: 'Jan 2021 - Aug 2022 (1 year and 8 months)',
 				image: '/images/llamanite.png',
 				url: '/projects/llamanite',
 			},
@@ -33,6 +33,8 @@ export function load() {
 			{ name: 'SQLite', style: 'hover:shadow-[0_0_30px_3px_#003B57d9] hover:bg-[#003B57]' },
 			{ name: 'Badger', style: 'hover:shadow-[0_0_30px_3px_#E50695d9] hover:bg-[#E50695]' },
 			{ name: 'Redis', style: 'hover:shadow-[0_0_30px_3px_#DC382Dd9] hover:bg-[#DC382D]' },
+			{ name: 'Gin', style: 'hover:shadow-[0_0_30px_3px_#00ADD8d9] hover:bg-[#00ADD8]' },
+			{ name: 'Iris', style: 'hover:shadow-[0_0_30px_3px_#00ADD8d9] hover:bg-[#00ADD8]' },
 			{ name: 'Next.JS', style: 'hover:shadow-[0_0_30px_3px_#000000d9] hover:bg-[#000000]' },
 			{ name: 'React', style: 'hover:text-black hover:shadow-[0_0_30px_3px_#61DAFBd9] hover:bg-[#61DAFB]' },
 			{ name: 'Svelte', style: 'hover:shadow-[0_0_30px_3px_#FF3E00d9] hover:bg-[#FF3E00]' },
