@@ -22,8 +22,8 @@
 						<img src={p.image} alt={p.title} />
 					</div>
 
-					<div class="flex flex-col justify-around whitespace-nowrap py-3 font-sans">
-						<h2 class="text-lg font-semibold">{p.title}</h2>
+					<div class="flex flex-col justify-around py-3 font-sans">
+						<h2 class="whitespace-nowrap text-lg font-semibold">{p.title}</h2>
 						<p class="text-xs text-zinc-500">{p.duration}</p>
 					</div>
 
@@ -44,7 +44,7 @@
 	</Section>
 
 	<Section title="Social Media" href="/contact">
-		<div class="flex flex-col justify-around gap-3 whitespace-nowrap text-lg italic text-zinc-500">
+		<div class="flex flex-col justify-around gap-3 whitespace-nowrap text-sm italic text-zinc-500 sm:text-lg">
 			{#each data.socialMedia as sm}
 				<a href={sm.href}>{sm.name}: <span class="font-mono not-italic text-white">{sm.username}</span></a>
 			{/each}
