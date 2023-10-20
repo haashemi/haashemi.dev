@@ -1,53 +1,88 @@
 <script lang="ts">
-	import Section from '$lib/Section.svelte';
+	//@ts-ignore
+	import Icon from 'svelte-icons-pack/Icon.svelte';
+	import GitHub from 'svelte-icons-pack/si/SiGithub';
+	import MailDotRu from 'svelte-icons-pack/si/SiMaildotru';
+	import Telegram from 'svelte-icons-pack/si/SiTelegram';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
 </script>
 
-<!-- About Me Section -->
-<div class="relative space-y-4 rounded-xl border-2 border-slate-700/40 bg-black/25 p-6 backdrop-blur-lg">
-	<h2 class="text-xl font-semibold italic">{data.info.title}</h2>
-	<p class="pl-2 indent-4">{data.info.text}</p>
+<svelte:head>
+	<title>Ali Hashemi</title>
+	<meta name="description" content="Ali Hashemi's portfolio website." />
+</svelte:head>
 
-	<div class="absolute -left-12 top-0 -z-10 h-20 w-64 bg-slate-800 blur-3xl" />
-</div>
+<div class="py-20 text-center text-3xl font-medium">Junior Golang Developer</div>
 
-<div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-	<Section title="Projects" href="/projects">
-		<div class="flex flex-col gap-4">
-			{#each data.projects as p}
-				<a href={p.url} class="flex h-20 gap-5 rounded-xl bg-zinc-900/50">
-					<div class="aspect-square h-20 w-20 rounded-xl bg-gradient-to-br from-slate-800 to-slate-700 p-3">
-						<img src={p.image} alt={p.title} />
+<div class="container mx-auto p-3">
+	<div class="grid gap-4 md:grid-cols-2 md:grid-rows-2">
+		<div class="row-span-1 space-y-4 rounded-xl border-2 border-slate-700/40 bg-black/25 p-6 backdrop-blur-lg">
+			<div class="flex items-center justify-between">
+				<h3 class="text-lg font-semibold italic">Hi there!</h3>
+			</div>
+
+			<p class="pl-2 indent-4">
+				I'm Ali Hashemi. A Junior back-end developer with <strong>3+ years</strong> of experience, including 1+ years of professional experience using
+				Golang. Proficient in developing and maintaining high-performance, stable, and reliable web applications. Also interested in front-end development
+				using modern web frameworks like Svelte and React.
+			</p>
+		</div>
+
+		<div class="row-span-2 space-y-5 rounded-xl border-2 border-slate-700/40 p-5">
+			<div class="flex items-center justify-between">
+				<h3 class="text-lg font-semibold italic">Skills</h3>
+			</div>
+
+			<div class="flex flex-wrap gap-3">
+				{#each data.skills as skill}
+					<p class="select-none rounded-full bg-white/20 px-3 py-1 font-medium transition-all hover:-translate-y-1 {skill.style}">
+						{skill.name}
+					</p>
+				{/each}
+			</div>
+		</div>
+
+		<div class="row-span-1 flex flex-col gap-5 rounded-xl border-2 border-slate-700/40 p-5">
+			<div class="flex items-center justify-between">
+				<h3 class="text-lg font-semibold italic">Get in touch!</h3>
+			</div>
+
+			<div class="flex grow flex-col justify-around gap-3">
+				<a class="group relative z-10 overflow-hidden rounded-3xl border border-zinc-900 p-5" href="mailto:contact@haashemi.dev">
+					<div class="flex items-center gap-3 font-mono text-base md:text-xl">
+						<Icon src={MailDotRu} size="28" color="white" />
+						<p class="whitespace-nowrap">contact@haashemi.dev</p>
 					</div>
-
-					<div class="flex flex-col justify-around py-3 font-sans">
-						<h2 class="whitespace-nowrap text-lg font-semibold">{p.title}</h2>
-						<p class="text-xs text-zinc-500">{p.duration}</p>
-					</div>
-
-					<div></div>
+					<div
+						id="mail-background"
+						class="absolute right-0 h-full w-3/5 rounded-full bg-violet-500/40 blur-3xl transition-all duration-500 ease-in-out group-hover:right-1/2"
+					/>
 				</a>
-			{/each}
-		</div>
-	</Section>
 
-	<Section title="Skills" href="/skills">
-		<div class="flex flex-wrap gap-3">
-			{#each data.skills as skill}
-				<p class="select-none rounded-full bg-white/20 px-3 py-1 font-medium transition-all hover:-translate-y-1 {skill.style}">
-					{skill.name}
-				</p>
-			{/each}
-		</div>
-	</Section>
+				<a class="group relative z-10 overflow-hidden rounded-3xl border border-zinc-900 p-5" href="https://t.me/Byfron">
+					<div class="flex items-center gap-3 font-mono text-base md:text-xl">
+						<Icon src={Telegram} size="28" color="white" />
+						<p class="whitespace-nowrap">@Byfron</p>
+					</div>
+					<div
+						id="telegram-background"
+						class="absolute left-0 h-full w-3/5 rounded-full bg-blue-500/40 blur-3xl transition-all duration-500 ease-in-out group-hover:left-[50%]"
+					/>
+				</a>
 
-	<Section title="Social Media" href="/contact">
-		<div class="flex flex-col justify-around gap-3 whitespace-nowrap text-sm italic text-zinc-500 sm:text-lg">
-			{#each data.socialMedia as sm}
-				<a href={sm.href}>{sm.name}: <span class="font-mono not-italic text-white">{sm.username}</span></a>
-			{/each}
+				<a class="group relative z-10 overflow-hidden rounded-3xl border border-zinc-900 p-5" href="https://github.com/haashemi">
+					<div class="flex items-center gap-3 font-mono text-base md:text-xl">
+						<Icon src={GitHub} size="28" color="white" />
+						<p class="whitespace-nowrap">@haashemi</p>
+					</div>
+					<div
+						id="github-background"
+						class="absolute right-0 h-full w-3/5 rounded-full bg-zinc-500/40 blur-3xl transition-all duration-500 ease-in-out group-hover:right-1/2"
+					/>
+				</a>
+			</div>
 		</div>
-	</Section>
+	</div>
 </div>

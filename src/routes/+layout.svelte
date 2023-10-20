@@ -1,5 +1,4 @@
 <script>
-	import Header from '$lib/Header.svelte';
 	import { onMount } from 'svelte';
 	import '../app.css';
 
@@ -12,15 +11,6 @@
 	});
 </script>
 
-<svelte:head>
-	<title>Ali Hashemi</title>
-	<meta name="description" content="Ali Hashemi's portfolio website." />
-</svelte:head>
-
-<main class="min-h-screen w-full bg-black">
-	<div class="container mx-auto flex flex-col gap-4 p-3">
-		<Header />
-
-		<slot />
-	</div>
+<main class="min-h-screen w-full bg-black font-sans">
+	<slot />
 </main>

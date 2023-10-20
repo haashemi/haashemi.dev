@@ -1,31 +1,5 @@
 export function load() {
 	return {
-		info: {
-			title: 'Junior Back-end Developer',
-			text: 'Junior back-end developer with 3+ years of experience, including 1+ years of professional experience using Golang. Proficient in developing and maintaining high-performance, stable, and reliable web applications. Also interested in front-end development using modern web frameworks like React and Svelte.',
-		},
-
-		projects: [
-			{
-				title: 'Epic-Center',
-				duration: 'Aug 2022 - Present',
-				image: '/images/epic-center.png',
-				url: '/projects/epic-center',
-			},
-			{
-				title: 'Zainox',
-				duration: 'Dec 2022 (1 month)',
-				image: '/images/zainox.png',
-				url: '/projects/zainox',
-			},
-			{
-				title: 'LlamaNite',
-				duration: 'Jan 2021 - Aug 2022 (1 year and 8 months)',
-				image: '/images/llamanite.png',
-				url: '/projects/llamanite',
-			},
-		],
-
 		skills: [
 			{ name: 'Golang', style: 'hover:shadow-[0_0_30px_3px_#00ADD8d9] hover:bg-[#00ADD8]' },
 			{ name: 'JS/TS', style: 'hover:text-black hover:shadow-[0_0_30px_3px_#F7DF1Ed9] hover:bg-[#F7DF1E]' },
